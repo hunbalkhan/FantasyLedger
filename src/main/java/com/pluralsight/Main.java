@@ -15,23 +15,21 @@ public class Main {
 
     //━━━━━━━━━━━━━━━━━━━━⊱⋆Main Menu and Choices⋆⊰━━━━━━━━━━━━━━━━━━━━
     public static void main(String[] args) {
-        System.out.println(
-                "╭──────────────────────.★..───╮\n" +
-                "  Welcome to Fairy's Treasury\n" +
-                "╰───..★.──────────────────────╯\n");
+        System.out.println("""
+                ╭──────────────────────.★..───╮
+                  Welcome to Fairy's Treasury
+                ╰───..★.──────────────────────╯
+                You push open the wooden door of a cozy little shop...
+                A bell jingles, and a fairy clerk flutters over with a smile.\n""");
 
-        System.out.println(
-                "You push open the wooden door of a cozy little shop...\n" +
-                "A bell jingles, and a fairy clerk flutters over with a smile.\n");
-
-        String mainMenu =
-                "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n" +
-                "⋆｡ﾟ☁｡⋆☾｡ The Enchanted Counter ⋆｡ﾟ☁｡⋆｡☾\n" +
-                "D) Add Treasure Deposit\n" +
-                "P) Make Treasure Payment\n" +
-                "L) Treasury of Trades (Ledger)\n" +
-                "X) Exit\n" +
-                "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n";
+        String mainMenu = """
+                ━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━ 
+                ⋆｡ﾟ☁｡⋆☾｡ The Enchanted Counter ⋆｡ﾟ☁｡⋆｡☾
+                D) Add Treasure Deposit
+                P) Make Treasure Payment
+                L) Treasury of Trades (Ledger)
+                X) Exit
+                ━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n\n""";
 
         while (true) {
             System.out.print(mainMenu);
@@ -60,10 +58,10 @@ public class Main {
         "'Please describe this fortune's purpose.'\n" + "You");
 
         String vendor = ConsoleHelper.promptForString
-        ("'From which realm, shop, or kind soul does this gold arrive?'\n" + "You");
+        ("'From which realm, shop, or kind soul does this gold arrive (WHICH VENDOR)?'\n" + "You");
 
         Double amount = ConsoleHelper.promptForDouble
-        ("'And how many shimmering coins shall we add to your pouch?'\n" + "You");
+        ("'And how many shimmering coins shall we add to your pouch (AMOUNT)?'\n" + "You");
 
         System.out.println("'Thank you! I've stored your information in the Treasury of Trades'");
 
@@ -78,9 +76,9 @@ public class Main {
         "'Please describe this fortune's purpose.'\n" + "You");
 
         String vendor = ConsoleHelper.promptForString
-        ("'To which realm, shop, or kind soul does this gold go?'\n" + "You");
+        ("'To which realm, shop, or kind soul does this gold go (VENDOR)?'\n" + "You");
 
-        System.out.print("'And how many shimmering coins shall we add to your pouch?'\n" + "You: ");
+        System.out.print("'And how many shimmering coins shall we add to your pouch (AMOUNT)?'\n" + "You: ");
         //This will make sure that the money will show it's negative (aka losing money)
         Double amount = scanner.nextDouble() * -1;
 
@@ -141,14 +139,16 @@ public class Main {
     //━━━━━━━━━━━━━━━━━━━━⊱⋆Ledger Menu and Choices⋆⊰━━━━━━━━━━━━━━━━━━━━
     public static void goToLedger() {
         String ledgerMenu =
-                "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n" +
-                "⋆｡ﾟ☁｡⋆☾｡ Treasury of Trades (Ledger)⋆｡ﾟ☁｡⋆｡☾\n" +
-                "A) All Entries\n" +
-                "D) Treasure Deposits \n" +
-                "P) Treasure Payments \n" +
-                "R) Records Chamber (Reports) \n" +
-                "H) Back - to (Home) The Enchanted Counter \n" +
-                "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n";
+                """
+                ━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━
+                ⋆｡ﾟ☁｡⋆☾｡ Treasury of Trades (Ledger)⋆｡ﾟ☁｡⋆｡☾
+                A) All Entries
+                D) Treasure Deposits
+                P) Treasure Payments
+                R) Records Chamber (Reports)
+                H) Back - to (Home) The Enchanted Counter
+                ━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━
+                        """;
         while (true) {
             System.out.print(ledgerMenu);
             char command;
@@ -202,15 +202,17 @@ public class Main {
     //━━━━━━━━━━━━━━━━━━━━⊱⋆Reports Menu and Choices⋆⊰━━━━━━━━━━━━━━━━━━━━
     public static void viewReports(){
         String ledgerMenu =
-                "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n" +
-                "⋆｡ﾟ☁｡⋆☾｡ Records Chamber (Reports)⋆｡ﾟ☁｡⋆｡☾\n" +
-                "1) Month To Date \n" +
-                "2) Previous Month \n" +
-                "3) Year To Date \n" +
-                "4) Previous Year \n" +
-                "5) Seek Trades by Merchant Name \n" +
-                "0) Back - to Treasury of Trades (Ledger)\n" +
-                "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n";
+                """
+                 ━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━
+                 ⋆｡ﾟ☁｡⋆☾｡ Records Chamber (Reports)⋆｡ﾟ☁｡⋆｡☾
+                 1) Month To Date 
+                 2) Previous Month 
+                 3) Year To Date 
+                 4) Previous Year 
+                 5) Seek Trades by Merchant Name 
+                 0) Back - to Treasury of Trades (Ledger)
+                 ━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━
+                        """;
         while (true) {
             System.out.print(ledgerMenu);
             int command;
