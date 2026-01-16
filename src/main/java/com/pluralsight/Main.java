@@ -11,8 +11,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    // hunbals changes
-
     public static ArrayList<Transactions> transactionHistory = getTransactionFromFile();
 
     //━━━━━━━━━━━━━━━━━━━━⊱⋆Main Menu and Choices⋆⊰━━━━━━━━━━━━━━━━━━━━
@@ -34,8 +32,6 @@ public class Main {
                 "L) Treasury of Trades (Ledger)\n" +
                 "X) Exit\n" +
                 "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n";
-
-
 
         while (true) {
             System.out.print(mainMenu);
