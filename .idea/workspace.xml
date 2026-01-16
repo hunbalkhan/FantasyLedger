@@ -26,6 +26,10 @@
   "selectedUrlAndAccountId": {
     "url": "https://github.com/margaretpalma/FantasyLedger",
     "accountId": "a50708b3-f560-40c2-8cb9-3aa2f9cd65b0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mohammed-F-Khan/FantasyLedger&quot;,
+    &quot;accountId&quot;: &quot;ec98f9eb-2056-438a-a931-6a20c42f95af&quot;
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -46,6 +50,14 @@
     "last_opened_file_path": "C:/Users/Student/pluralsight/FantasyLedger"
   }
 }]]></component>
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
