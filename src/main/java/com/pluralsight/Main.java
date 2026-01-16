@@ -36,6 +36,7 @@ public class Main {
                 "━━━━━━━━━━━━━━━━━━━━⊱⋆⊰━━━━━━━━━━━━━━━━━━━━\n";
 
 
+
         while (true) {
             System.out.print(mainMenu);
             char command;
@@ -188,8 +189,7 @@ public class Main {
         for(Transactions t : transactionHistory){
             System.out.println(t);
         }
-        System.out.println();
-        System.out.println("Every magical entry glows before your eyes - behold your transactions!");
+        System.out.println("\nEvery magical entry glows before your eyes - behold your transactions!");
     }
     private static void viewDeposits (){
 
@@ -198,8 +198,7 @@ public class Main {
                 System.out.println(t);
             }
         }
-        System.out.println();
-        System.out.println("The fairy sprinkles a little magic dust...\n" +
+        System.out.println("\nThe fairy sprinkles a little magic dust...\n" +
         "'Here are all the treasures you've safely stored! What a fine collection of riches, traveler!'");
     }
     private static void viewPayments (){
@@ -209,8 +208,7 @@ public class Main {
                 System.out.println(t);
             }
         }
-        System.out.println();
-        System.out.println("The fairy waves her wand...\n" +
+        System.out.println("\nThe fairy waves her wand...\n" +
         "'Here are all of the coins you've sent in generosity!'");
     }
 
